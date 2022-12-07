@@ -1,0 +1,9 @@
+<%- include("partials/header") -%>
+
+  <h1> Titles Selection </h1>
+  <hr>
+  <% notes.forEach( (note) => { %>
+    <h1> <%= note.noteTitle %> <a href="/notes/<%=note._id%>"> Click Me! </a> </h1>
+  <% }); %>
+
+<%- include("partials/footer") -%>
